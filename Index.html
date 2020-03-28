@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Covid Resource Center</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -12,7 +13,7 @@
 <body>
   <header>
     <!-- navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <a class="navbar-brand" href="#">COVID-19 RC</a>
       <form class="form-inline">
         <button class="btn btn-outline-success" type="button">SUBMIT</button>
@@ -47,15 +48,19 @@
   <main>
     <!-- category navigation-->
     <div class="container-fluid container-fluid2">
-      <div class="row justify-content-between">
+      <div class="row justify-content-around">
         <div class="col-sm-2 catnav">
           <!--divide the body into category and cards columns-->
+          <div class="right">
+            <form class="form searchbar w-75 ml-auto">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+            </form>
+          </div>
+
           <div class="catnavbod">
-            <h3>Categories</h3>
+
             <nav class="nav flex-column navpad navpad">
               <a class="nav-link active" href="#">Active</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link" href="#">Link</a>
               <a class="nav-link" href="#">Link</a>
               <a class="nav-link" href="#">Link</a>
               <a class="nav-link" href="#">Link</a>
@@ -69,79 +74,105 @@
           </div>
         </div>
 
-        <!--Resource cards -->
-        <div class="col-sm-10 h-100"> <!--divide the body into category and cards columns-->
+        <!--Resource cards area-->
+        <div class="col-10">
+          <div class="row">
 
-          <!--Resource Cards-->
-          <div class="row justify-content-around style row2">
-            <div class="row justify-content-around style row2">
-
-              <!-- row 1 card 1-->
-              <div class="col-2 cards  shadow p-3 mb-5 bg-white rounded"">
-                <div class=" row justify-content-around">
-                <div class="col-12 mt-4 mb-2">
-                  <img src="images/uber logo 1.jpg" alt="amazon logo" class="testimg" style="padding-top:1%;"">
-                  </div>
-                  <div class=" col-12">
-                  <p style="padding-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Vulputate odio ut enim blandit volutpat maecenas volutpat.</p>
+          <!-- First row of cards-->
+            <div class="col-12">
+              <div class="card-deck h-100">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   </div>
                 </div>
-            </div>
-
-            <!--row 1 card 2-->
-            <div class="col-2 cards col-2 cards shadow p-3 mb-5 bg-white rounded"">
-              <div class=" row justify-content-around">
-                <div class="col-12 mt-4 mb-2">
-                  <img src="images/uber logo 1.jpg" alt="amazon logo" class="testimg" style="padding-top:1%;"">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
                 </div>
-                <div class=" col-12 texcol">
-                  <p style="padding-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Vulputate odio ut enim blandit volutpat maecenas volutpat.</p>
+
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!--row 1 card 3-->
-            <div class="col-2 cards col-2 cards shadow p-3 mb-5 bg-white rounded"">
-              <div class=" row justify-content-around">
-                <div class="col-12 mt-4 mb-2">
-                  <img src="images/uber logo 1.jpg" alt="amazon logo" class="testimg" style="padding-top:1%;"">
+            <!-- Second row of cards-->
+            <div class="col-12">
+              <div class="card-deck h-100">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
                 </div>
-                <div class=" col-12">
-                  <p style="padding-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Vulputate odio ut enim blandit volutpat maecenas volutpat.</p>
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!--row 1 card 4-->
-          <div class="col-2 cards col-2 cards shadow p-3 mb-5 bg-white rounded"">
-            <div class=" row justify-content-around">
-              <div class="col-12 mt-4 mb-2">
-                <img src="images/uber logo 1.jpg" alt="amazon logo" class="testimg" style="padding-top:1%;"">
-              </div>
-              <div class=" col-12">
-                <p style="padding-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Vulputate odio ut enim blandit volutpat maecenas volutpat.</p>
+            <!-- Third row of cards-->
+            <div class="col-12">
+              <div class="card-deck h-100">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                </div>
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <img class="card-img-top" src="images/uber logo 1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
+
+
+
+
           </div>
 
-          <!--row 1 card 5-->
-      <div class="col-2 cards col-2 cards shadow p-3 mb-5 bg-white rounded"">
-        <div class=" row justify-content-around">
-          <div class="col-12 mt-4 mb-2">
-            <img src="images/uber logo 1.jpg" alt="amazon logo" class="testimg" style="padding-top:1%;"">
-          </div>
-          <div class=" col-12">
-            <p style="padding-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Vulputate odio ut enim blandit volutpat maecenas volutpat.</p>
-          </div>
+
+
+
+
         </div>
-      </div>
-    </div>
-  </div>
 
   </main>
   <footer>
